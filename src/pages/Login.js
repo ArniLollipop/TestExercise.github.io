@@ -80,7 +80,7 @@ export default function Login(props) {
               value={pass}
               onChange={(e) => setPass(e.target.value)}
             />
-            {!error && (
+            {error && (
               <p className="text-center text-base my-3 text-red-600 font-medium">
                 Неправильный логин или пароль
               </p>
